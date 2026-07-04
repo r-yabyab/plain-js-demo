@@ -1,4 +1,10 @@
-.topnav {
+.topnavContainer {
     background: grey;
-    text: grey
+    text: grey;
+    display: flex;
+    gap: 4px;
+    /* align: center; */
+    float: center;
+    justify-content: left;
+    padding: 20px;
 }

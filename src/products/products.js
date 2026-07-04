@@ -10,9 +10,11 @@ function loadProducts() {
     .then(response => response.json())
     .then(data => {
         const container = document.getElementById("products-list");
+        container.innerHTML = ""
         
         data.products.forEach(x => {
             const productDiv = document.createElement("div");
+            // productDiv.id = "innerProductDiv"
             productDiv.innerHTML = `
             <div>${x.title}</div>
             <div>${x.price}</div>

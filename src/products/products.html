@@ -14,21 +14,26 @@
     <div id="products-list"></div>
     <div id="quickproducts-list"></div>
 
-    <button 
-        id="nextButton"
-        style="display:none;"
-        onclick="ProductManager.nextPage()"
-    >
-    next
-    </button>
 
-    <button 
-        id="previousButton"
-        style="display:none;"
-        onclick="ProductManager.previousPage()"
-    >
-    Previous
-    </button>
+    <div class="buttonContainer">
+        <button 
+            id="nextButton"
+            style="display:none;"
+            onclick="ProductManager.nextPage()"
+        >
+            next
+        </button>
+
+        <button 
+            id="previousButton"
+            style="display:none;"
+            onclick="ProductManager.previousPage()"
+        >
+            Previous
+        </button> 
+    </div>
+
+
 
     <!-- <div>Current page <span id="pageCounter">0</span> </div> -->
     <div style="display: none" id="pageCounter">Current page 0</div>
